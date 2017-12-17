@@ -1,0 +1,39 @@
+{
+	"ddl": {
+		"devices": {
+			"Photo Resistor": {
+				"name": "CdS photoresistor",
+				"discription": "Measure the room light and iput it",
+				"type": "physical",
+				"mode": "input",
+				"Pin": "P9.40",
+				"threshold": 1800,
+				"Auto Mode": 1,
+				"value": "analog"
+
+			},
+			"Led": {
+				"name": "10mm LED",
+				"discription": "Glow or unglow led based upon input",
+				"type": "physical",
+				"mode": "output",
+				"Pin": "P8.10",
+				"default": "0x27",
+				"on": "0x0",
+				"off": "0x27",
+				"value": "digital"
+
+			},
+			"sensor_Led": {
+				"name": "10mm LED and CdS photoresistor",
+				"discription": "Glow or unglow led based upon Cds photoresister readings",
+				"type": "virtual",
+				"mode": "input/output",
+				"Pin": "P8.10 and P9.40"
+
+
+			}
+
+		}
+	}
+}
